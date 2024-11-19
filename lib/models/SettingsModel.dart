@@ -1,0 +1,46 @@
+import 'package:flutter/material.dart';
+import 'package:roomie_radar/main.dart';
+import 'package:roomie_radar/views/Static/RFAboutUsScreen.dart';
+import 'package:roomie_radar/views/RFNotificationScreen.dart';
+import 'package:roomie_radar/utils/RFImages.dart';
+
+class SettingModel {
+  final String img;
+  final String settingName;
+  final Widget newScreenWidget;
+
+  SettingModel({
+    required this.img,
+    required this.settingName,
+    required this.newScreenWidget,
+  });
+}
+
+List<SettingModel> settingList() {
+  List<SettingModel> settingListData = [];
+  settingListData.add(
+    SettingModel(
+      img: rfNotification,
+      settingName: "Notifications",
+      newScreenWidget: RFNotificationScreen(
+        uid: userModel!.id!,
+      ),
+    ),
+  );
+  settingListData.add(
+    SettingModel(
+      img: rfAboutUs2,
+      settingName: "About us",
+      newScreenWidget: const RFAboutUsScreen(),
+    ),
+  );
+  settingListData.add(
+    SettingModel(
+      img: rfSignOut,
+      settingName: "Sign Out",
+      newScreenWidget: const SizedBox(),
+    ),
+  );
+
+  return settingListData;
+}

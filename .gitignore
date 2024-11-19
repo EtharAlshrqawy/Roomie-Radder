@@ -1,0 +1,93 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+*.tmp
+*.temp
+*.orig
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code related
+.vscode/
+*.code-workspace
+
+# Flutter related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+build/
+.merged_bin/
+
+# Web related
+lib/generated_plugin_registrant.dart
+
+# Android related
+**/android/**/gradle-wrapper.properties
+**/android/local.properties
+**/android/key.properties
+**/android/**/debug.keystore
+android/.gradle/
+android/app/build/
+
+# iOS related
+**/ios/Flutter/.last_build_id
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner.xcworkspace/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/ServiceDefinitions.json
+ios/Podfile.lock
+
+# Windows related
+windows/flutter/ephemeral/
+
+# Linux related
+linux/flutter/ephemeral/
+
+# MacOS related
+macos/Flutter/ephemeral/
+
+# Web related
+web/.dart_tool/
+
+# Firebase related
+firebase-debug.log
+firebase-debug.*
+google-services.json
+*.firebase
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Test related
+coverage/
+
+# Sensitive or environment-specific files
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.temp
+*.orig
